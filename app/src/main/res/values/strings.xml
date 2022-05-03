@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Diary Book</string>
+    <string name="bookAdd">Добавить книгу</string>
+</resources>
