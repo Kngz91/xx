@@ -1,12 +1,17 @@
 package com.example.myapplication;
 
-import static com.example.myapplication.R.layout.book_item;
-
-import androidx.appcompat.app.AppCompatActivity;
+import android.content.Context;
 import android.os.Bundle;
+import android.util.AttributeSet;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.namespace.R;
+
 import java.util.ArrayList;
 
 
@@ -36,7 +41,13 @@ public class MainActivity extends AppCompatActivity {
             buttons[i].setText(bookshelf.get(i).getName());
             linearLayout.addView(buttons[i]);
         }
+class Item extends View{
 
+    public Item(Context context, @Nullable AttributeSet attrs) {
+        super(context, attrs);
+        bk =
+    }
+}
 
 
     }
