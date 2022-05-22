@@ -15,8 +15,7 @@ class Item(
 
     constructor(context: Context,attrs: AttributeSet?, defStyleAttr: Int):this (context,attrs,defStyleAttr,0)
     constructor(context: Context, attrs: AttributeSet?):this(context,attrs, 0)
-    constructor() : this(context, attrs = null) {
-
+    constructor(context: Context) : this(context,attrs = null) {
     }
 
 

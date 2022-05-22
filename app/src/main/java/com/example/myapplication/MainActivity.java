@@ -1,13 +1,9 @@
 package com.example.myapplication;
 
-import android.content.Context;
 import android.os.Bundle;
-import android.util.AttributeSet;
-import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.namespace.R;
@@ -21,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout linearLayout;
     Button[] buttons;
     Form form = new Form();
-    Item bookItem = new Item();
+    Item bookItem = new Item(getApplicationContext());
     ArrayList<Book>bookshelf = form.getBooks();
 
     @Override
@@ -41,13 +37,7 @@ public class MainActivity extends AppCompatActivity {
             buttons[i].setText(bookshelf.get(i).getName());
             linearLayout.addView(buttons[i]);
         }
-class Item extends View{
 
-    public Item(Context context, @Nullable AttributeSet attrs) {
-        super(context, attrs);
-        bk =
-    }
-}
 
 
     }
